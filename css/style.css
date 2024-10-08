@@ -1,3 +1,4 @@
-.page-header nav img {
-  height: 50px;
+::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
 }
