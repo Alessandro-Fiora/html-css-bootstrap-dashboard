@@ -106,6 +106,7 @@
                 class="form-control"
                 id="inputAuthorName"
                 placeholder="Inserisci il nome dell'autore"
+                required
               />
             </div>
             <div class="col-6">
@@ -117,6 +118,7 @@
                 class="form-control"
                 id="inputAuthorSurname"
                 placeholder="Inserisci il cognome dell'autore"
+                required
               />
             </div>
             <div class="col-12">
@@ -126,32 +128,58 @@
                 class="form-control"
                 id="inputTitle"
                 placeholder="Inserisci il titolo del libro"
+                required
               />
             </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
+            <div class="col-lg-4">
+              <label for="inputGenre" class="form-label">Genere</label>
+              <select
+                id="inputGenre"
+                class="form-select"
+                aria-label="Default select example"
+              >
+                <option value="" selected>Scegli il genere</option>
+                <option value="1">Fantasy</option>
+                <option value="2">Sci-Fi</option>
+                <option value="3">Drama</option>
+              </select>
+            </div>
+            <div class="col-lg-4">
+              <label for="inputYear" class="form-label"
+                >Anno di Pubblicazione</label
+              >
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress2"
-                placeholder="Apartment, studio, or floor"
+                id="inputYear"
+                placeholder="Inserisci l'anno di pubblicazione"
               />
             </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity" />
+            <div class="col-lg-4">
+              <label for="inputISBN" class="form-label">ISBN#</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputISBN"
+                placeholder="Inserisci il codice ISBN#"
+                required
+              />
             </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
+            <div class="col-12">
+              <hr class="" />
             </div>
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip" />
+            <div class="col-12">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Note</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Inserisci eventuali note sul libro"
+              ></textarea>
             </div>
+
             <div class="col-12">
               <div class="form-check">
                 <input
@@ -160,12 +188,14 @@
                   id="gridCheck"
                 />
                 <label class="form-check-label" for="gridCheck">
-                  Check me out
+                  Disponibile anche in digitale
                 </label>
               </div>
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary">Sign in</button>
+              <button type="submit" class="btn btn-primary">
+                Aggiungi Libro
+              </button>
             </div>
           </form>
         </section>
